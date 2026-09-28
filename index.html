@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>To Sharpshot or Not to Sharpshot</title>
+<style>
+  :root { --bg:#121f2b; --panel:#1b2b3a; --line:#2f4458; --text:#e6edf3; --accent:#4296fa; --red:#ff5555; }
+  * { box-sizing:border-box; }
+  body { margin:0; padding:12px; background:var(--bg); color:var(--text); font:15px/1.4 system-ui,sans-serif;
+         display:grid; grid-template-columns:minmax(300px,1fr) minmax(400px,1.4fr); gap:12px; align-items:start; }
+  @media (max-width:800px) { body { grid-template-columns:1fr; } }
+  .win { background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:12px; overflow-x:auto; }
+  .win > h2 { margin:0 0 8px; font-size:16px; }
+  .tabs { display:flex; gap:4px; margin-bottom:10px; flex-wrap:wrap; }
+  .tabs button { background:#25384a; color:var(--text); border:0; padding:6px 12px; border-radius:4px; cursor:pointer; }
+  .tabs button.active { background:var(--accent); }
+  h3 { margin:14px 0 6px; font-size:13px; color:#9db2c6; border-bottom:1px solid var(--line); padding-bottom:2px; }
+  .field { margin:6px 0; } .field label { display:block; margin-bottom:2px; }
+  .check label { display:flex; gap:6px; align-items:center; }
+  .dice-title { color:var(--red); margin-top:8px; }
+  input[type=number], select { background:#0f1a24; color:var(--text); border:1px solid var(--line); border-radius:4px; padding:4px 6px; width:100%; max-width:260px; }
+  button.build { background:var(--accent); color:#fff; border:0; padding:8px 18px; border-radius:4px; cursor:pointer; font-size:15px; }
+  p.note { white-space:pre-line; margin:6px 0; }
+  table { border-collapse:collapse; width:100%; }
+  th, td { border:1px solid var(--line); padding:4px 8px; text-align:right; white-space:nowrap; }
+  td:last-child, th:last-child { text-align:left; }
+  tbody tr:nth-child(odd) { background:rgba(255,255,255,.04); }
+</style>
+</head>
+<body>
+  <div class="win"><h2>Settings</h2><div id="settings"></div></div>
+  <div class="win"><h2>Output</h2><div id="output"></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
