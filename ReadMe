@@ -1,0 +1,38 @@
+# To Sharpshot Or Not To Sharpshot
+Welcome! This is my D&D optimizer I worked on for an afternoon. When it comes to dungeons and dragons, I love to take a character concept and make them as powerful as possible within the bounds of the game and the fantasy of the character (and the enjoyment of the other players). Often this involves the sharpshooter or great weapon master feats, or custom options that function similarly. I am never sure what the cutoff point of the best option to use is, so I made this app! It doubles as a great way to find your average damage on a particular AC, as it calculates crits.
+
+## Browser Version
+This is the **BROWSER VERSION** of the app. This was always probably supposed to be a web app, but I elected not to in order to learn DearIMGUI. This app was adapted with claude, but not too much different from the original.
+
+## Function
+This program takes user specifications and runs dice roll trials to achieve an average damage on a number of armor classes. It rolls 6 sets of dice, 2 with advantage, 2 with disadvantage, and one standard. Each of these sets has one rolled as a gamble and one rolled normally.
+
+### Programming Specification
+This program was created on a windows machine with visual studio code. It uses OpenGL, GLFW, glad, and DearImGui.
+
+### User Specifications
+This program allows for the following specifications:
+- Crit Ranges from 18-20
+- Brutal Critical
+- Halfling Reroll
+- Hunter's Mark/Hex/Once per turn damages
+- Variable Trials
+- Attacks with multiple damage types
+- Attacks with multiple damage die sizes
+- Attacks with multiple dice rolled
+- Guaranteed Criticals on Hits
+- Resistance
+- Bonuses for multiple resistance types
+- Rerolls of Damage with Piercer, Savage Attacker, Great Weapon Fighting
+This program does NOT support:
+- Spellcasters. Martials need something, someone already made a google doc of the spells... (I may revisit this later to add this).
+- Advanced Homebrewing support (Unfortunately, I cannot plan for each 6 rolled to double damage or anything).
+- Dragon's Wrath Nat 20 Explosion type effects. Multiple targets gets tricky. Unless I make this way more in depth, this is unrealistic.
+
+## Download
+Just download the zip file or clone the repo!
+
+<img width="2124" height="1081" alt="image" src="https://github.com/user-attachments/assets/36409879-7eea-4078-bfea-71bcb9d9fec1" />
+<img width="2123" height="1086" alt="Page2" src="https://github.com/user-attachments/assets/2256513a-b134-43d2-a78a-606f2a5378fc" />
+<img width="2124" height="1079" alt="Page3" src="https://github.com/user-attachments/assets/13ee35e2-febe-4359-b33a-eda461ff3777" />
+<img width="2124" height="1081" alt="Page4" src="https://github.com/user-attachments/assets/1ab23587-b762-4346-a11c-3c1769ab9ea6" />
